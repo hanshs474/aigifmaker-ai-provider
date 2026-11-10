@@ -1,0 +1,21 @@
+{
+  "name": "aigifmaker-ai-provider",
+  "version": "0.1.0",
+  "description": "AI GIF Maker (aigifmaker.ai) provider for the Vercel AI SDK: turn text into animated GIFs with generateImage.",
+  "license": "MIT",
+  "author": "AI GIF Maker <support@aigifmaker.ai>",
+  "homepage": "https://aigifmaker.ai/?utm_source=npm-ai-sdk&utm_medium=package",
+  "repository": { "type": "git", "url": "git+https://github.com/hanshs474/aigifmaker-ai-provider.git" },
+  "bugs": { "url": "https://github.com/hanshs474/aigifmaker-ai-provider/issues" },
+  "keywords": ["ai", "ai-sdk", "vercel-ai", "provider", "gif", "ai-gif-generator", "text-to-gif", "animated-gif", "image-generation", "aigifmaker"],
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": { ".": { "types": "./dist/index.d.ts", "import": "./dist/index.js" } },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": { "build": "tsc", "test": "node --test test.mjs", "prepublishOnly": "tsc" },
+  "dependencies": { "aigifmaker": "^0.1.1" },
+  "peerDependencies": { "@ai-sdk/provider": ">=4.0.0" },
+  "devDependencies": { "@ai-sdk/provider": "^4.0.28", "typescript": "^5.6.0", "ai": "^7.0.0" },
+  "engines": { "node": ">=18" }
+}
